@@ -36,7 +36,7 @@ public class JavaApplication2 {
     
     public static void main(String[] args) {
         Hello();
-        sum(4,2);
+        sum(4,5);
     }
 
 }
