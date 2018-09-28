@@ -14,7 +14,7 @@ public class JavaApplication2 {
 
 
     public static void Hello() {
-        System.out.println("Hello World!");
+        System.out.println("Hello Jom!");
 
     }
 
