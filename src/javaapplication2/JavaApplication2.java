@@ -11,20 +11,15 @@ package javaapplication2;
  */
 public class JavaApplication2 {
 
-   public class int method1(int base, int exponent){
-{
-    int result = 1;
-    for (int i = 0; i < exponent; i++)
-        result *= base;
-    return result;
-}
-   
-   
-   
-   
-   }
-    public static void main(String[] args) {
-      method1();
+
+
+    public static void Hello() {
+        System.out.println("Hello World!");
+
     }
-    
+
+    public static void main(String[] args) {
+        Hello();
+    }
+
 }
