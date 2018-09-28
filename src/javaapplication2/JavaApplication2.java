@@ -34,9 +34,44 @@ public class JavaApplication2 {
         return sum;
     }
     
+    /**
+     * Shows the power of a base depending on it's exponent without recursion
+     * @param base The input to be multiplied by itself
+     * @param exponent The input to tell how many times the base to multiplied by itself
+     * @return pow_product The product of the power method
+     */
+    
+    public static double power(double base, double exponent) {
+        double pow_product = base;
+        
+        for(int i = 1; i < exponent; i++) {
+            pow_product = pow_product * base;
+        }
+        
+        return pow_product;
+    }
+    
+    /**
+     * Shows the power of a base depending on it's exponent with recursion
+     * @param base The input to be multiplied by itself
+     * @param exponent The input to tell how many times the base to multiplied by itself
+     * @return base * powerRecursion(base,exponent-1)
+     */
+    
+    public static double powerRecursion(double base, double exponent) {
+       
+       if(exponent == 1) return base;
+       if(exponent == 0) return 1.0;
+       else {
+          return base * powerRecursion(base,exponent-1); 
+       }
+    }
+    
     public static void main(String[] args) {
         Hello();
-        sum(4,5);
+        System.out.println(sum(4,5));
+        System.out.println(power(2,4));
+        System.out.println(powerRecursion(2,4));
     }
 
 }
